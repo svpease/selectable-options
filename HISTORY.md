@@ -1,1 +1,1 @@
-See https://github.com/react-component/select/releases
+See https://github.com/svpease/selectable-options/releases
