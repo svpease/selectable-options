@@ -1,4 +1,4 @@
-# selectable-options [![NPM version][npm-image]][npm-url] [![Test coverage][coveralls-image]][coveralls-url] [![Dependencies][david-image]](david-url) [![DevDependencies][david-dev-image]][david-dev-url] [![bundle size][bundlephobia-image]][bundlephobia-url]
+# selectable-options [![NPM version][npm-image]][npm-url] [![Test coverage][coveralls-image]][coveralls-url]  [![bundle size][bundlephobia-image]][bundlephobia-url]
 
 [React](https://reactjs.org/) component for selecting options.
 
@@ -9,6 +9,8 @@ This may turn into an entirely separate endeavor, but I'm thankful to [Ant Desig
 Currently the primary difference between this npm package and [rc-select](https://www.npmjs.com/package/rc-select) is the addition of the props: **optionSelectableLabelProp**, **optionSelectedLabelProp**, and **persistSelectedLabelsOnly**. These props are described [below](#selectable-options-props).
 
 <!--
+[![Dependencies][david-image]](david-url)
+[![DevDependencies][david-dev-image]][david-dev-url]
 [![npm download][download-image]][download-url]
 [![build status][github-actions-image]][github-actions-url]
 -->
