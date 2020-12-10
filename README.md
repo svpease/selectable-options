@@ -1,7 +1,5 @@
 # selectable-options
 
----
-
 [React](https://reactjs.org/) component for selecting options.
 
 This is a fork of the npm package, [rc-select](https://www.npmjs.com/package/rc-select), because I'm still waiting for them to review my pull request that refactored a sizable chunk of their codebase while adding new features, and it is uncertain if my changes will ever get merged in.
@@ -18,22 +16,22 @@ Currently the primary difference between this npm package and [rc-select](https:
 [![DevDependencies][david-dev-image]][david-dev-url]
 [![bundle size][bundlephobia-image]][bundlephobia-url]
 
-[npm-image]: http://img.shields.io/npm/v/rc-select.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/rc-select
-[travis-image]: https://img.shields.io/travis/react-component/select/master?style=flat-square
+[npm-image]: http://img.shields.io/npm/v/selectable-options.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/selectable-options
+[travis-image]: https://img.shields.io/travis/selectable-options/main?style=flat-square
 [travis-url]: https://travis-ci.com/react-component/select
 [github-actions-image]: https://github.com/react-component/select/workflows/CI/badge.svg
-[github-actions-url]: https://github.com/react-component/select/actions
+[github-actions-url]: https://github.com/svpease/selectable-options/actions
 [coveralls-image]: https://img.shields.io/coveralls/react-component/select.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/react-component/select?branch=master
-[codecov-image]: https://img.shields.io/codecov/c/github/react-component/select/master.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/react-component/select/branch/master
+[codecov-image]: https://img.shields.io/codecov/c/github/selectable-options/master.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/selectable-options/branch/main
 [david-url]: https://david-dm.org/react-component/select
-[david-image]: https://david-dm.org/react-component/select/status.svg?style=flat-square
+[david-image]: https://david-dm.org/selectable-options/status.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/react-component/select?type=dev
-[david-dev-image]: https://david-dm.org/react-component/select/dev-status.svg?style=flat-square
-[download-image]: https://img.shields.io/npm/dm/rc-select.svg?style=flat-square
-[download-url]: https://npmjs.org/package/rc-select
+[david-dev-image]: https://david-dm.org/selectable-options/dev-status.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/selectable-options.svg?style=flat-square
+[download-url]: https://npmjs.org/package/selectable-options
 [bundlephobia-url]: https://bundlephobia.com/result?p=rc-select
 [bundlephobia-image]: https://badgen.net/bundlephobia/minzip/rc-select
 
@@ -192,6 +190,9 @@ npm test -- --silent --coverage
 ```
 npm run coverage
 ```
+
+## Maintainers
+- [Steven Pease](https://github.com/svpease)
 
 ## License
 
