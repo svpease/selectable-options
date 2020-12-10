@@ -151,6 +151,7 @@ export default () => (
 | selectableLabel* | The option's label as it appears when it is selectable in the options dropdown (*there is nothing special about the "selectableLabel" property*, it only becomes meaningful when the `optionSelectableLabelProp` is set to "selectableLabel") | string \| ReactNode | - |
 | selectedLabel* | The option's label as it appears when shown as a selected option (*there is nothing special about the "selectedLabel" property*, it only becomes meaningful when the `optionSelectedLabelProp` is set to "selectedLabel") | string \| ReactNode | - |
 | title | Custom `title` shown while hovering on selected value (if not provided, this is created automatically using the option's label or value) | string | - |
+
 \*The properties "selectableLabel" and "selectedLabel" do not work without using `optionSelectableLabelProp` and `optionSelectedLabelProp` to point to these properties respectively.
 
 ### OptionGroupData (JSON Object)
