@@ -6,10 +6,9 @@
 
 This is a fork of the npm package, [rc-select](https://www.npmjs.com/package/rc-select), because I'm still waiting for them to review my pull request that refactored a sizable chunk of their codebase while adding new features, and it is uncertain if my changes will ever get merged in.
 
-This may turn into an entirely separate endeavor, but I'm thankful for [Ant Design](https://reactjs.org/) for the initial code to create this component.
+This may turn into an entirely separate endeavor, but I'm thankful to [Ant Design](https://reactjs.org/) for the initial code to create this component.
 
 Currently the primary difference between this npm package and [rc-select](https://www.npmjs.com/package/rc-select) is the addition of the props: **optionSelectableLabelProp**, **optionSelectedLabelProp**, and **persistSelectedLabelsOnly**. These props are described [below](#selectable-options-props).
-
 
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
