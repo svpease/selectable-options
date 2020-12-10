@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "React component for selecting options",
   "engines": {
-    "node": ">=12.x"
+    "node": ">=8.x"
   },
   "keywords": [
     "react",
