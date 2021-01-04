@@ -96,11 +96,16 @@ export default ({
       // of the options data
       [...rawValues].sort().forEach(value => {
         if (!providedSelectableOptionsMap.has(value)) {
-          result.push({
-            value,
-            [optionSelectedLabelProp]: value,
-            [optionSelectableLabelProp]: value,
-          });
+          if (selectedOptionsMap.has(value)) {
+            result.push(selectedOptionsMap.get(value))
+          }
+          else {
+            result.push({
+              value,
+              [optionSelectedLabelProp]: value,
+              [optionSelectableLabelProp]: value,
+            });
+          }
         }
       });
       return result;
