@@ -1,6 +1,6 @@
 {
   "name": "selectable-options",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "React component for selecting options",
   "engines": {
     "node": ">=8.x"
