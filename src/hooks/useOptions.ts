@@ -97,9 +97,8 @@ export default ({
       [...rawValues].sort().forEach(value => {
         if (!providedSelectableOptionsMap.has(value)) {
           if (selectedOptionsMap.has(value)) {
-            result.push(selectedOptionsMap.get(value))
-          }
-          else {
+            result.push(selectedOptionsMap.get(value));
+          } else {
             result.push({
               value,
               [optionSelectedLabelProp]: value,
