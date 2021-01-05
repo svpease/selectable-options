@@ -156,6 +156,7 @@ export default ({
         filteredOptions.unshift({
           value: searchValue,
           key: '__RC_SELECT_TAG_PLACEHOLDER__',
+          __created: true,
         });
       }
 
