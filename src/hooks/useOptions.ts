@@ -175,6 +175,15 @@ export default ({
     optionFilterProp,
   ]);
 
+  const selectableDisplayOptions = useMemo(() =>
+    toMap(
+      displayOptions.filter(o => !o.group) as OptionData[],
+      flatOption => flatOption.data.value,
+      flatOption => flatOption.data,
+    ),
+    [displayOptions],
+  );
+
   const providedValuesOptionDataMap = useMemo(
     () =>
       toMapByValue([
@@ -190,6 +199,7 @@ export default ({
     return {
       ...selectedOptionsMap.get(v),
       ...selectableOptionsMap.get(v),
+      ...selectableDisplayOptions.get(v),
       value: v,
       [optionSelectedLabelProp]: [
         (selectedOptionsMap.get(v) || {} as any)[optionSelectedLabelProp],
@@ -274,6 +284,7 @@ export default ({
     if ([
       selectableOptionsMap.get(value),
       selectedOptionsMap.get(value),
+      selectableDisplayOptions.get(value),
     ].some(x => x !== undefined)) {
       // If the provided value is present either within the selectable options or
       // the selected options, return this option's collected option data
