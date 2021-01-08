@@ -303,6 +303,8 @@ export default function generateSelector<
       onDeselect,
       onClear,
 
+      appendSelectedTagOptionsToDropdown = true,
+
       internalProps = {},
 
       ...restProps
@@ -408,6 +410,7 @@ export default function generateSelector<
       optionFilterProp,
       optionSelectedLabelProp,
       optionSelectableLabelProp,
+      appendSelectedTagOptionsToDropdown,
       mode,
       propsOptions: props.options,
       propsChildren: props.children,

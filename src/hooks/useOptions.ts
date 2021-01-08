@@ -24,6 +24,7 @@ export default ({
   optionFilterProp,
   optionSelectedLabelProp,
   optionSelectableLabelProp,
+  appendSelectedTagOptionsToDropdown,
   mode,
   propsValue,
   propsDefaultValue,
@@ -89,7 +90,7 @@ export default ({
   );
 
   const options: OptionsType = useMemo(() => {
-    if (mode === 'tags') {
+    if (mode === 'tags' && appendSelectedTagOptionsToDropdown) {
       const result = [...providedOptionsData] as OptionsType;
       // For all selected option values that do not have a corresponding selectable option,
       // add selectable options (in alphabetical order) for these values to the end/bottom

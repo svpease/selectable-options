@@ -121,6 +121,7 @@ export default () => (
 | clearIcon | specify the clear icon | ReactNode | - |
 | removeIcon | specify the remove icon | ReactNode | - |
 | menuItemSelectedIcon | specify the remove icon | ReactNode \| (props: MenuItemProps) => ReactNode | - |
+| appendSelectedTagOptionsToDropdown | Whether the selected options (when in "tags" mode) are appended to the end of the dropdown if they are not currently deselectable within the dropdown. (Deselecting options is also possible by clicking the close button for each selected option) | boolean | true |
 | dropdownRender | Customize how the selectable options dropdown is rendered | (menu: ReactNode, props: MenuProps) => ReactNode | - |
 | loading | Whether the loading icon should be shown (if visible, it appears where the arrow icon would be) | boolean | false |
 | virtual | Enable virtual scroll | boolean | true |
