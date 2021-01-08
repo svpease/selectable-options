@@ -157,6 +157,7 @@ export interface SelectProps<OptionsType extends object[], ValueType> extends Re
   tagRender?: (props: CustomTagProps) => React.ReactElement;
   showAction?: ('focus' | 'click')[];
   tabIndex?: number;
+  appendSelectedTagOptionsToDropdown?: boolean;
 
   // Events
   onKeyUp?: React.KeyboardEventHandler<HTMLDivElement>;
