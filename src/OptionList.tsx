@@ -300,11 +300,12 @@ const OptionList: React.RefForwardingComponent<
             ...otherProps
           } = data as OptionData;
 
-          // Allow for properties whose name begins with "aria-" or "data-" to be added to the div element containing an option
+          // Allow for properties whose name begins with "aria-" or "data-" to be added to the div
+          // element containing an option
           const allowedDomProps = Object.keys(otherProps)
             .filter(key => key.startsWith('aria-') || key.startsWith('data-'))
             .reduce((result, key) => {
-              result[key] = otherProps[key];
+              result[key] = otherProps[key]; // eslint-disable-line no-param-reassign
               return result;
             }, {});
 
