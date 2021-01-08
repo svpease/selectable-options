@@ -300,6 +300,14 @@ const OptionList: React.RefForwardingComponent<
             ...otherProps
           } = data as OptionData;
 
+          // Allow for properties whose name begins with "aria-" or "data-" to be added to the div element containing an option
+          const allowedDomProps = Object.keys(otherProps)
+            .filter(key => key.startsWith('aria-') || key.startsWith('data-'))
+            .reduce((result, key) => {
+              result[key] = otherProps[key];
+              return result;
+            }, {});
+
           // Option
           const selected = values.has(value);
 
@@ -326,7 +334,7 @@ const OptionList: React.RefForwardingComponent<
 
           return (
             <div
-              {...otherProps}
+              {...allowedDomProps}
               aria-selected={selected}
               className={optionClassName}
               title={optionTitle}
